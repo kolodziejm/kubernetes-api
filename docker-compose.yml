@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server:
+    image: node:14.5-alpine
+    command: npm run dev
+    volumes:
+      - ./:/usr/src/app
+    working_dir: /usr/src/app
+    ports:
+      - "4000:4000"
