@@ -10,4 +10,5 @@ COPY . .
 
 EXPOSE 4000
 
+# Command to execute on container start
 CMD ["npm", "start"]
